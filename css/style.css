@@ -1,0 +1,333 @@
+@charset "UTF-8";
+
+/* 
+
+writing-mode: vertical-rl;
+
+または
+
+writing-mode: vertical-lr;
+
+
+これを使って縦書きにしましょう！
+
+
+*/
+
+
+
+body {
+    font-family: "Fraunces", serif;
+}
+
+* {
+    text-decoration: none;
+    list-style: none;
+    font-size: 15px;
+}
+
+img {
+    width: 100%;
+}
+
+/* common   */
+
+header, footer {
+    color: white;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size:32px;
+}
+
+/* header */
+    header {
+         /*効いていない？ */
+        
+    }
+    .sp {
+        display: none;
+    }
+
+    .mainvisual img {
+        height: 100vh;
+        object-fit: cover;
+        position: relative;
+        object-position: top;
+    }
+
+    .mainvisual {
+        /* height: 100vh; */
+    }
+
+    .logo {
+        width: 40px;
+    }
+
+    .header-right  {
+        position: absolute;
+        top: 60px;
+        right: 80px;
+        display: flex;
+    }
+
+    .header-ul {
+        writing-mode: vertical-rl;
+        margin-right: 60px;
+        }
+
+    .header-ul li {
+        color: white;
+        margin-left: 25px;
+    }
+
+    .header-ul a , .header-left {
+        color: white;
+    }
+    
+    .header-left {
+        padding: 30px 15px;
+        outline: 9px solid rgba(114, 117, 116, 0.425);
+        position: absolute;
+        writing-mode: vertical-rl;
+        bottom: 40px;
+        left: 50px;
+        background-color: rgba(114, 117, 116, 0.425);
+        border: 1px solid white;
+    }
+
+    .header-left:hover {
+        opacity: 0.7;
+    }
+
+
+/* main  */
+
+    main {
+        background-color: rgb(236, 227, 215);
+    }
+
+     /* article */
+        article {
+            writing-mode: vertical-rl;
+            width: 100%; /*これをつけると右に寄るのはなぜ？ */
+            padding-top: 160px;
+        }
+
+        article dl {
+            padding-top: 80px;
+            padding-right: 100px;
+        }
+
+        article dt {
+            padding-right: 30px;
+        }
+
+        article dt:first-child {
+            border-right: 1px solid black;
+        
+        }
+
+        article dd {
+            padding-left: 30px;
+            padding-right: 0.4rem;
+            border-left: 1px solid  black;
+        }
+        
+        article dt, article dd {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+
+    /* section */
+    section {
+        padding-top: 200px;
+        display: flex;
+    }
+
+    
+
+    .section-1 h1 {
+        padding-left: 20px;
+        
+    }
+
+    .section-title {
+        writing-mode: vertical-rl;
+        display: flex;
+    }
+
+    .section-1 {
+        /* display: flex; */
+        flex-direction: row-reverse;
+    }   
+
+    .title-sub {
+        padding-top: 30px;
+    }
+
+    .photo {
+        max-width: 580px;
+        padding-top: 95px;
+        position: relative;
+    }
+
+    section .text {
+        width: 330px;
+        padding: 50px 0;
+        text-align: center;
+        color: white;
+        
+        opacity: 0.5;
+        
+    }
+
+    
+
+    .section-1 {
+        padding-right: 15px;
+        padding-left: 30px;
+    }
+
+    .section-1 .text {
+        
+        text-align: center;
+        background-color: rgb(243, 221, 21);
+        position: absolute;
+        bottom: -15px   ;
+        left: -20px;
+    }               
+
+    .section-2 {
+        padding-left: 15px;
+        padding-right: 30px;
+    }
+
+    .section-2 .text{
+        background-color: rgb(134, 12, 12);
+        position: absolute;
+        bottom: -15px   ;
+        right: -20px;
+    }
+
+    .section-2 .photo {
+        padding-left: 15px;
+        
+    }
+
+    iframe {
+        width: 100%;
+        padding-top: 170px;
+    }
+/* footer */ 
+
+footer {
+    padding-top: 80px;
+    background-color: black;
+    min-height: 490px;
+}
+
+footer .logo {
+    margin: 0 70px;  
+}
+
+footer a {
+    color: white;
+}
+
+footer .wrapper{
+    display: flex;
+    writing-mode: vertical-rl;
+    flex-direction: column;
+    justify-content:space-between;
+    width: 100%;
+}
+
+.footer-right p:nth-of-type(2){
+    padding-right: 15px;
+}
+
+.footer-ul {
+    padding-right: 30px;
+}
+
+.footer-ul li {
+    padding-right: 30px;
+}
+
+.footer-left {
+    padding-left: 30px;
+}
+
+.small {
+    text-align: center;
+    
+}
+
+small {
+    padding-bottom: 30px;
+}
+
+
+
+/* レスポンシブ */
+
+@media (max-width:768px){
+    .pc {
+        display: none;
+    }
+
+    .sp {
+        display: block;
+    }
+
+    .header-right  {
+        top: 30px;
+        right: 25px;
+    }
+
+    article dt:nth-child(n+2), article dd:nth-child(n+2) {
+         display: none;      /*1うまくいかない */
+    }
+
+    section {
+        padding-top: 100px;
+    }
+
+    section .text {
+        width: 280px;
+        padding: 30px 0;
+    }
+
+    /* footer */
+    footer {
+        padding-top: 40px;
+    }
+    
+    footer .logo {
+        margin: 0 20px;
+    }
+
+    .footer-right p:nth-of-type(2){
+    padding-right: 10px;
+    }
+
+    .footer-ul {
+        padding-right: 20px;
+    }
+
+    .footer-ul li {
+        padding-right: 13px;
+    }
+
+    .footer-left {
+        padding-left: 20px;
+    }
+
+}
