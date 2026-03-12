@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>創作</title>
+    <meta name="description" content="テキストテキストテキストテキストテキストテキストテキストテキスト">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Klee+One&family=Noto+Serif+JP:wght@200..900&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="mainvisual">
+            <img class="pc" src="img/top-background-pc.jpg" alt="mainvisual">
+            <img class="sp" src="img/top-background-sp.jpg" alt="mainvisual">
+        </div>
+        <div class="header-right">
+            <nav>
+                <ul class="header-ul">
+                    <li><a href="#article">お知らせ</a></li>
+                    <li><a href="#section-1">商品のご紹介</a></li>
+                    <li><a href="#section-2">店舗のご案内</a></li>
+                </ul>
+            </nav>
+            <a href="#"><img class="logo" src="img/logo.svg" alt="logo"></a>
+        </div>
+        <a class="header-left" href="#">オンラインストアを見る</a>
+    </header>
+
+    <main>  
+        <div class="container">
+            <article id="article">
+                <p>News</p>
+                <h1 class="title">お知らせ</h1>
+                <dl>
+                    <dt>2021.01.01</dt>
+                    <dd>タイトルタイトルタイトルタイトル</dd>
+
+                    <dt>2021.01.01</dt>
+                    <dd>タイトルタイトルタイトルタイトル</dd>
+
+                    <dt>2021.01.01</dt>
+                    <dd>タイトルタイトルタイトルタイトル</dd>
+
+                    <dt>2021.01.01</dt>
+                    <dd>タイトルタイトルタイトルタイトル</dd>
+
+                    <dt>2021.01.01</dt>
+                    <dd>タイトルタイトルタイトルタイトル</dd>
+                </dl>
+            </article>
+
+            <section class="section-1" id="section-1">
+                <div class="section-title">
+                    <h1 class="title">新しい価値の創造</h1>
+                    <p class="title-sub">Create New Values</p>
+                </div>
+                <div class="photo">
+                    <img src="img/products1.jpg" alt="">
+                    <p class="text">テキストテキスト<br>テキストテキスト</p>
+                </div>
+            </section>
+
+            <section class="section-2" id="section-2"> 
+                <div class="section-title">
+                    <h1 class="title">科学と技術の調和</h1>
+                    <p class="title-sub">Science & Technology</p>
+                </div>
+                <div class="photo">
+                    <img src="img/products2.jpg" alt="">
+                    <p class="text">テキストテキスト<br>テキストテキスト</p>
+                </div>
+            </section>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6483.366329297049!2d139.735061!3d35.660177!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b9c2ef8e6c3%3A0xff8de5eeddcd1e17!2z44CSMTA2LTAwMzIg5p2x5Lqs6YO95riv5Yy65YWt5pys5pyo77yV5LiB55uu!5e0!3m2!1sja!2sjp!4v1756811408454!5m2!1sja!2sjp" width="100%" height="610" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </main>
+
+    <footer>
+        <div class="wrapper">
+            <div class="footer-right">
+                <img class="logo" src="img/logo.svg" alt="">
+                <p>〒１０６-００３２　東京都港区六本木５丁目×××××</p>
+                <p>電話：<a href="tel:０３-ＸＸＸＸ-ＸＸＸＸ">０３-ＸＸＸＸ-ＸＸＸＸ</a></p>
+                <ul class="footer-ul">
+                        <li><a href="#article">お知らせ</a></li>
+                        <li><a href="#section-1">商品のご紹介</a></li>
+                        <li><a href="#section-2">店舗のご案内</a></li>
+                </ul>
+            </div>
+            <div class="footer-left">
+                <a href="#">オンラインストアを見る</a>｜<a href="mailto:">お問い合わせ</a>
+            </div>
+        </div>
+        <div class="small">
+            <small>&copy; sousaku</small>
+        </div>
+    </footer>
+
+    
+</body>
+
+</html>
